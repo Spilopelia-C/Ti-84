@@ -1,4 +1,4 @@
-Menu("Chi-Squared Tests","χ² Goodness of Fit",1S,"χ² of Independence",2S,"χ² for Homogeneity",3S
+Menu("Chi-Squared Tests","χ² Goodness of Fit",1S,"χ² of Independence",2S,"χ² for Homogeneity",3S,"EXIT",X
 
 Lbl 1S
 ClrHome
@@ -328,3 +328,7 @@ Disp "calculated expected values
 Pause 
 ClrHome
 Goto X
+
+
+Lbl X
+"Program By Spilopelia-C"
