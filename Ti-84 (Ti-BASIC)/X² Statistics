@@ -5,7 +5,7 @@ ClrHome
 ZStandard
 GridOff
 AxesOff
-Text(­1,1,1,"χ² Test of Independence
+Text(­1,1,1,"χ² Test Goodness of Fit
 Text(20,1,"χ² = Σ((Obs-Exp)²Exp)
 Text(35,1,"df = (Row - 1)(Column - 1)
 Text(55,1,"Set number of groups to compare
