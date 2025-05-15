@@ -1,13 +1,13 @@
-Menu("Chi-Squared Tests","χ² Goodness of Fit",1S,"χ² of Independence",2S,"χ² for Homogeneity",3S,"EXIT",X
+Menu("Chi-Squared Tests","χ² Goodness of Fit",1S,"χ² of Independence",2S,"χ² for Homogeneity",3S
 
 Lbl 1S
 ClrHome
 ZStandard
 GridOff
 AxesOff
-Text(­1,1,1,"χ² Test Goodness of Fit
+Text(­1,1,1,"χ² GOF
 Text(20,1,"χ² = Σ((Obs-Exp)²Exp)
-Text(35,1,"df = (Row - 1)(Column - 1)
+Text(35,1,"df = # of groups - 1
 Text(55,1,"Set number of groups to compare
 Text(70,1,"
 Text(90,1,"Null Hypothesis (H₀):
@@ -78,11 +78,13 @@ If P≤A
 Then
 Output(6,1,"Conclusion: ")
 Output(7,1,"REJECT H₀")
+Pause 
+ClrHome
+Goto X
 Else:If P>A
 Then
 Output(6,1,"Conclusion: ")
 Output(7,1,"Fail to Reject H₀")
-End 
 Pause 
 ClrHome
 Goto X
