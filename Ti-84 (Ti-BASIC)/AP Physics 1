@@ -1,0 +1,992 @@
+Lbl θ
+ClrHome
+Menu("AP PHYSICS1 TOPICS","Kinematics",A,"Forces & Dynamics",B,"Rotational Motion",C,"Energy, Work, and Power",D,"Linear Momentum",E,"Oscillations & Waves",F,"Fluids",G," EXIT",X
+
+Lbl A
+Menu("KINEMATICS","Basics",A1,"Formulas",A2,"Interpreting Graphs",A3," BACK",θ
+
+Lbl A1
+Disp "Mass(kg) stays constant","[Scalar, intrinsic]
+Disp "
+Disp "Weight(N) depends on g","[Vector, extrinsic]
+Disp "
+Disp "Displacement      (∫v dt)
+Disp "Velocity    (dx/dt,∫a dt)
+Disp "Acceleration(dv/dt)
+Pause 
+ClrHome
+Disp "Vector Components:
+Disp "Vx = V cos(θ)
+Disp "Vy = V sin(y)
+Disp "
+Disp "Resultant & Angle
+Disp "V = √(Vx² + Vy²)
+Disp "θ = tan(Vy / Vx)
+Disp "
+Disp "
+Pause 
+ClrHome
+Goto X
+
+
+Lbl A2
+Menu("KINEMATICS Formulas","Formulas & Derivations",GF,"UAM Equasions",UE,"Pulleys Equasion",PE," BACK",θ
+
+Lbl GF
+ClrHome
+Disp "General Formulas
+Disp "
+Disp " v = v₀ + at
+Disp "x = v₀t + 1/2(at²)
+Disp "x = ((v + v₀) / 2) * t
+Disp "v² = v²₀ + 2a(x)
+Pause 
+ClrHome
+Disp "Derivatives for 2D Motion
+Disp "
+Disp "t* = √(2y / g)
+Disp "t* = (Vyf - Vy₀) / ay
+Disp "Vx₀= (x) / (√(2y / g))
+Disp "Vy₀= √(-2a y)
+Disp "x = Vx₀(t) + 1/2(at²)
+Disp "y = 1/2 a(t*)²
+Pause 
+ClrHome
+Disp "0m/s = Vy₀ - gt
+Disp "
+Disp "v = √(Vx₀² + Vy₀²)
+Disp "θ = tan(Vy₀ / Vx₀)
+Disp "
+Goto X
+
+
+Lbl UE
+Disp "no x","Vf = Vi + at
+Disp "
+Disp "no a","x = 1/2 (Vf + Vi) t
+Disp "
+Disp "no t","Vf² = Vi² + 2a x 
+Pause 
+ClrHome
+Disp "no Vf","x = Vi t + 1/2(a t²)
+Disp "
+Disp "no Vi","x = Vf t - 1/2(a t²)
+Goto X
+
+Lbl PE
+Disp "Horizontal Pulley
+Disp "
+Disp "For m₂: m₂(g) - T = m₂(a)
+Disp "For m₁: T = m₁(a)
+Disp "
+Disp "m₂(g) = m₁(a) + m₂(a)
+Disp "a = m₂(g) / (m₁ + m₂)
+Disp "Fnet = (m₁ + m₂)a
+Disp "Fnet = (m₂ - m₁)g
+Pause 
+ClrHome
+Disp "Horizontal Pulley with µ
+Disp "
+Disp "For m₂: m₂(g) - T = m₂(a)
+Disp "For m₁: T - µm₁(g)= m₁(a)
+Disp "
+Disp "m₂g - m₁a - µ(m₁g) = m₂a
+Disp "m₂g = (m₁ + m₂)a + µ(m₁g)
+Disp "a = (m₂g-µ(m₁g)) / (m₁+m₂)
+Disp "Fnet same as previous
+Pause 
+ClrHome
+Disp "Atwood's Machine Pulley 
+Disp "[m₁ < m₂]
+Disp "
+Disp "m₁(a) = T - m₁(g) 
+Disp "m₂(a) = m₂(g) - T
+Disp "T = m₁(g) + m₁(a)
+Disp "
+Disp "m₂g - m₁g - m₁a = m₂a
+Disp "(m₂ - m₁)g = (m₁ + m₂)a
+Pause 
+ClrHome
+Disp "Inclined Pulley
+Disp "[m₂ is falling]
+Disp "
+Disp "m₂(g) - T = m₂(a)
+Disp "T - m₁(g)sinθ = m₁(a)
+Disp "
+Disp "m₂g-m₁g(sinθ)-m₁a = m₂a
+Disp "a = (m₂g-m₁g(sinθ))/(m₁+m₂
+Pause 
+ClrHome
+Disp "Horizontal-Incline Pulley
+Disp "[m₂ is falling]
+Disp "
+Disp "T = m₁(a)
+Disp "m₂g(sin θ) - T = m₂a
+Disp "
+Disp "m₂g(sin θ) = (m₁ + m₂)a
+Disp "a = (m₂g sin θ)/(m₁ + m₂)
+Disp "Fnet = m₂g sin θ
+Pause 
+ClrHome
+Goto X
+
+Lbl A3
+Disp "Position-Time Graph
+Disp "
+Disp "Slope: Velocity (v)
+Disp "Area:  
+Pause 
+ClrHome
+Disp "Velocity-Time Graph
+Disp "
+Disp "Slope: Acceleration (a)
+Disp "Area: Displacement (x)
+Pause 
+ClrHome
+Disp "Acceleration-Time Graph
+Disp "
+Disp "Slope: 
+Disp "Area: Change in velocity
+Goto X
+
+
+
+
+
+Lbl B
+Menu("Forces & Dynamics","Key Points",B1,"Formulas",B2," BACK",θ
+
+Lbl B1
+Menu("Forces Key Points","Newton's Laws",NL,"Friction Forces",FF,"Center of Mass",BC," BACK",θ
+
+Lbl NL
+Disp "Newton's First Law
+Disp "
+Disp "An object at rest will
+Disp "remain at rest and an
+Disp "object in motion will
+Disp "continue in constant speed
+Disp "and direction unless acted
+Disp "on by an umbalanced
+Disp "external force
+Pause 
+ClrHome
+Disp "Newton's Second Law
+Disp "
+Disp "The force acting on an 
+Disp "an object is equal to the
+Disp "mass of that object times
+Disp "its acceleration, or just
+Disp "F = ma
+Pause 
+ClrHome
+Disp "Newton's Third Law
+Disp "
+Disp "For every action force,
+Disp "there is always a reaction
+Disp "force equal in strength
+Disp "and opposite in direction
+Disp "
+Goto X
+
+Lbl FF
+Disp "Static Friction (µs)
+Disp "
+Disp "If the object is at rest,
+Disp "it has to first overcome 
+Disp "static friction to move
+Disp "
+Disp "Fs ≤ µs * Fnormal
+Pause 
+ClrHome
+Disp "Kinetic Friction (µk)
+Disp "
+Disp "If the object is already
+Disp "in motion, friction will
+Disp "be kinetic
+Disp "
+Disp "Fk = µk * Fnormal
+Disp "Fn = Fk / µk = mg
+Pause 
+ClrHome
+Goto X
+
+
+
+
+Lbl BC
+Disp "Center of Mass Formula:
+Disp "M = mass
+Disp "
+Disp "X[cm] = Σ(Mi(Xi))Σ(M)
+Disp "Y[cm] = Σ(Mi(Yi))Σ(M)
+Disp "X & Y = coordinates
+Pause 
+ClrHome
+Disp "V[cm] = Σ(Mi(Vi))Σ(M)
+Disp "a[cm] = Σ(Mi(Vi))Σ(M)
+Disp "
+Disp "Momentum: Σ(P) = Σ(Mi(Vi))
+Disp "P[sys] = m[sys]v[cm] = Σ(P
+Disp "
+Disp "V[cm] = Σ(P)M[sys]
+Pause 
+ClrHome
+Goto X
+
+
+
+Lbl B2
+Menu("Formulas","Inclines",IC,"Kepler's Third Law",KT," BACK",θ
+
+
+
+Lbl IC
+Disp "Triangular Inclines
+Disp "Frictionless
+Disp "a = g sin θ
+Disp "
+Disp "With Friction
+Disp "ΣF = mg sin θ - µmg cos θ
+Disp "a = g sin θ - (Ff/m)
+Disp "a = g sin θ - (µ(Fn)/m)
+Disp "a = g sin θ - µg cos θ
+Pause 
+ClrHome
+Goto X
+
+
+
+Lbl KT
+Disp "Field Force: 
+Disp "GMe/r²
+Disp "
+Disp "Escape Force:
+Disp "Vesc = √((2GMe)/Re)
+Disp "
+Disp "Orbital Velocity:
+Disp "Vorb = √((GMe)/Re)
+Pause 
+ClrHome
+Disp "Method 1:
+Disp "
+Disp "Vesc = √2 Vorb
+Disp "Vorb = √((GM)/R)
+Disp "
+Disp "if Vorb = circular
+Disp "Vorb = 2πR/T
+Disp "T²/R²(R) = 4π²/GM
+Pause 
+ClrHome
+Disp "Method 2:
+Disp "T = 2πR/v
+Disp "a = G(M/r²)
+Disp "v² = G(M/r)
+Disp "
+Disp "T² = GM/2πr²
+Disp "
+Disp "Fg = M₂(v²/r) = Fc
+Pause 
+ClrHome
+Goto X
+
+
+
+
+
+
+Lbl C
+Menu("Rotational Motion","Uniform Circular Motion",C1,"Rotational Motion",C2,"Rotational Dynamics",C3," BACK",θ
+
+Lbl C1
+Disp "Uniform Circular Motion
+Disp "Ac = g = v² / r
+Disp "ΣFc = mg = mv² / r
+Disp "v = √(gr)
+Disp "
+Disp "v = d/t = 2πr/T
+Disp "T = 1/f
+Pause 
+ClrHome
+Disp "At the Top:
+Disp "ΣFc = Fn + mg
+Disp "Fn = mg - m(v² / r)
+Disp "At the Bottom:
+Disp "ΣFc = Fn - mg
+Disp "Fn = mg + m(v² / r)
+Disp "On the Sides:
+Disp "ΣFc = Fg = Fn
+Pause 
+ClrHome
+Goto X
+
+
+
+
+
+Lbl C2
+ClrHome
+Disp "Rotational Motion
+Disp "θ = s/r
+Disp "w = θ/t
+Disp "α = w/t
+Disp "
+Disp "τ = rF sinθ (Nm)
+Disp "τ = Iα
+Disp "I = Σmr²
+Disp "I' = Icm + md²
+Pause 
+Menu("Rotational Motion","Derivations",CD,"Time-Related Derivations",CC,"Graphs & Relations",CG,"Pulleys",CP," BACK",θ
+
+
+Lbl CD
+ClrHome
+Disp "Derivations
+Disp "w = √(2αθ)
+Disp "t = (wf - wi)  α
+Disp "
+Disp "θ = (wf - wi)²  2α
+Disp "α = (wf - wi)²  2θ
+Disp "
+Disp "
+Pause 
+ClrHome
+Goto X
+
+
+
+Lbl CC
+ClrHome
+Disp "Stop Time Due to Friction
+Disp "α = ­τ/I = -r(Ff)/I
+Disp "0 = w₀ + αt
+Disp "t = -w₀/α
+Disp "t = (w₀I)/(r(Ff))
+Disp "Time for [x] Rotations
+Disp "θ = w₀t + (1/2)αt²
+Disp "θ = 2π[x]
+Disp "t = (­w₀t+-√(w₀²+4πxα))α
+Pause 
+ClrHome
+Goto X
+
+
+
+
+
+
+Lbl CP
+ClrHome
+Disp "Massive Atwoods Machine
+Disp "
+Disp "Στ = (0.5mp•r²)α
+Disp "F₁ - F₂ = 0.5(mp(asys))
+Disp "
+Disp "asys = rα
+Disp "rα = (m₁-m₂)g/0.5(mp+m₁+m₂)
+Pause 
+ClrHome
+Disp "Massive Horizontal Pulley
+Disp "
+Disp "Ft₁ = m₁g - m₁(asys)
+Disp "Ft₂ = m₂asys + µk(m₂g)
+Disp "Στ = (0.5mp•r²)α
+Disp "
+Disp "asys = atan = rα
+Disp "rα = (m₁-µkm₂)g/0.5(mp+m₁+m₂)
+Pause 
+ClrHome
+Goto X
+
+
+
+
+
+Lbl C3
+Menu("Rotational Dynamics","Energy",CE,"Work & Power",CW,"Momentum",CM,"Rotational Orbits",CO,"Graphs & Relations",CR," BACK",θ
+
+Lbl CE
+Disp "Rotational Dynamics
+Disp "K = (1/2)mv²
+Disp "K = (1/2)Iw²
+Disp "   = (1/2)(mr²)w²
+Disp "
+Disp "ΣKE = (1/2)mv² + (1/2)Iw²
+Disp "Coupled only in rolling
+Disp "Decoupled during slipping
+Pause 
+ClrHome
+Disp "s = rθ
+Disp "v = rw
+Disp "a = rα
+Disp "
+Disp "mgh = (1/2)mv² + (1/2)Iw²
+Disp "    = (1/2)mv² + (1/2)▫mv²
+Disp "
+Disp "Vf = √((2gh)(1+▫))
+Pause 
+ClrHome
+Goto X
+
+Lbl CM
+Disp "Point: L = rmv sin(θ)
+Disp "Axis: L = Iw
+Disp "
+Disp "Iα = I(w/t) = Στ
+Disp "I(w) = L = Στt
+Disp "
+Disp "ΣLi = ΣLf
+Disp "if Στ = 0 and I = 0
+Pause 
+ClrHome
+Disp "L in terms of K, Ug, Us
+Disp "
+Disp "L² = 2(I)(K)
+Disp "
+Disp "L = m√(GMr)
+Disp "U = -G²M²mL²
+Disp "
+Disp "L = 2Us√(m/k)
+Pause 
+ClrHome
+Goto X
+
+
+
+
+Lbl CO
+Disp "Circular Orbits:
+Disp "τ = rF sin(180°) = 0
+Disp "KE & GPE Constant
+Disp "
+Disp "Eliptical Orbits:
+Disp "τ = rF sin(180°) = 0
+Disp "KE & GPE Fluctuate
+Disp "r₁mv₁ sinθ = r₂mv₂ sinθ
+Disp "v₂ = (v₁)•(r₁r₂)
+Pause 
+ClrHome
+Disp "Escape Velocity
+Disp "ME = (1/2)mv² - GMmr
+Disp "ME = 0 for escape velocity
+Disp "
+Disp "Vesc = √(2GM/r)
+Disp "Wesc = √(2GM/r)
+Disp "
+Disp "Work = GMIr
+Disp "τ = GMIrθ
+Pause 
+ClrHome
+Goto X
+
+
+
+
+
+Lbl CW
+Disp "W = τθ = (1/2)Iw² = K
+Disp "W = Fx = (τ/r)x = Iαθ
+Disp "
+Disp "Iαθ = (1/2)I(wf²-wi²)
+Disp "     = K
+Disp "
+Disp "W = π • revolutions • τ
+Disp "
+Disp "P = τw = Iαw
+Pause 
+ClrHome
+Goto X
+
+
+
+Lbl CR
+Disp "Area under the τ vs θ curve
+Disp "is the work done, the slope
+Disp "is the torque applied
+Disp "
+Disp "Area under the L vs τ curve
+Disp "is L and the slope means
+Disp "dLdt or τ which equals to
+Disp "angular acceleration (α)
+Pause 
+ClrHome
+Goto X
+
+
+
+
+
+
+
+
+Lbl D
+ClrHome
+Menu("Energy, Work, and Power","Work & Power",D1,"Energy & Derivations",D2,"Universal Gravitation",D3," BACK",θ
+
+Lbl D1
+Disp "Work: (unit: J)
+Disp "W = KE
+Disp "W = Fd cos(θ) = mgd cos(θ)
+Disp "Wf = µ(mgd cos(θ))
+Disp "
+Disp "θ < 90 has positive work
+Disp "θ > 90 has negative work
+Disp "θ = 90 has no work
+Disp "Area of Force-Position Graph
+Pause 
+ClrHome
+Disp "Work is not done when the
+Disp "object exerted on by the
+Disp "external force doen't end
+Disp "up moving, or if the force
+Disp "was perpendicular to the
+Disp "object's motion.
+Disp "
+Disp "Angle (θ) is between Force
+Disp "and Distance Traveled
+Pause 
+ClrHome
+Disp "Power: (unit: W)
+Disp "P = W / t
+Disp "P = Fd cos(θ) / t
+Disp "P = mgh / t
+Disp "
+Disp "P = Fd / t = mgd / t
+Disp "P = Fv cos(θ) = mgv
+Pause 
+ClrHome                          
+Goto X
+
+Lbl D2
+Disp "Kinetic Energy (J)
+Disp "K = (1/2)mv²
+Disp "
+Disp "Potential Energy (J)
+Disp "Ug = mgh
+Disp "
+Disp "Elastic Potential Energy (J)
+Disp "U = (1/2)k(x²)
+Pause 
+ClrHome
+Disp "Derivations:
+Disp "h = v² / 2g
+Disp "v = √(2gh)
+Disp "t = √(2h / g)
+Disp "d = vt = √(4h²) = 2h
+Disp "
+Disp "
+Goto X
+
+Lbl D3
+Disp "Universal Gravitation:
+Disp "Ug = -G(m₁)(m₂) / r
+Disp "Fg = G(m₁)(m₂) / r²
+Disp "
+Disp "Ug needs 2 objects
+Disp "Ug < 0
+Disp "U = 0 when r = infinite
+Disp "Usys = Uab + Uac + Ubc + ...
+Pause 
+ClrHome
+Disp "at r = R(radius)
+Disp "m₁ = object
+Disp "m₂ = planet
+Disp "
+Disp "g₂ = Gm₂ / R₂²
+Disp "Ug = -G(m₁)(m₂) / R₂
+Disp "Ug = -(Gm₂ / R₂²)(m₁R₂)
+Disp "Ug = -g₂(m₁R₂)
+Pause 
+ClrHome
+Goto X
+
+
+
+
+Lbl E
+ClrHome
+Menu("Linear Momentum","Key Points",E1,"Formulas & Derivations",E2,"Compounded Derivations",E3,"Interpreting Graphs",E4," BACK",θ
+Lbl E1
+Disp "Momentum (vector, kg•m/s)
+Disp "Impulse (vector, N•s)
+Disp "
+Disp "Elastic Collisions
+Disp "KE conserved, p conserved
+Disp "
+Disp "Inelastic Collisions
+Disp "KE not conserved, p conserved
+Pause 
+ClrHome
+Disp "Totally Inelastic Collisions
+Disp "KE not conserved, p conserved
+Disp "
+Disp "Object stick together in
+Disp "tIC, unlike for EC and IC
+Disp "
+Disp "pi = pf
+Disp "m₁v₁ + m₂v₂ = m₁vf + m₂vf
+Disp "p = vf(m₁+m₂)
+Pause 
+ClrHome
+Goto X
+
+
+Lbl E2
+Disp "F = ma = [dp/dt]
+Disp "F = m(v/t)
+Disp "Ft = mv = p = pi - pf
+Disp "Ft = F(tf-ti) = M(Vf-Vi)
+Disp "F = M(Vf-Vi)/(tf-ti)
+Disp "
+Disp "if Vf = 0, 
+Disp "F = M(-Vi)/(tf-ti)
+Pause 
+ClrHome
+Disp "Impulse-Momentum Theorem
+Disp "J = p = Favg(t)
+Disp "
+Disp "Favg(t) = MVf - MVi
+Disp "Favg(t) = M((Vf-Vi)/t)
+Disp "
+Disp "Favg = M((Vf-Vi)/t) = ma
+Pause 
+ClrHome
+Goto X
+
+
+
+Lbl E3
+Disp "Energy (KE, EPE)
+Disp "E = p²/2m
+Disp "
+Disp "Kinematics
+Disp "p = m(v₀ + at)
+Pause 
+ClrHome
+Goto X
+
+
+
+Lbl E4
+Disp "External Force vs Time
+Disp "
+Disp "Slope: 
+Disp "Area: Impulse (J)
+Pause 
+ClrHome
+Disp "Impulse vs Time
+Disp "
+Disp "Slope: Force (N) 
+Disp "Area:
+Pause 
+ClrHome
+Disp "Force vs Displacement
+Disp "
+Disp "Slope: 
+Disp "Area: Work
+Disp "
+Goto X
+
+
+
+
+
+
+
+
+
+
+Lbl F
+Menu("Oscillations & Waves","Key Points",F1,"Formulas & Derivations",F2,"Complex Derivations",F3,"Interpreting Graphs",F4," BACK",θ
+
+Lbl F1
+Disp "Restoring Force: F = -kx
+Disp "k is a system's constant
+Disp "x is distance from eqlibrm
+Disp "
+Disp "Frequency(f) is how many
+Disp "cycles happen in a time
+Disp "
+Disp "Period(T) is how much time
+Disp "passes for one cycle
+Pause 
+ClrHome
+Disp "T = 1/f (unit: s)
+Disp "f = 1/T (unit: Hz)
+Disp "Wavelength(λ) = v/f
+Disp "
+Disp "Spring-mass system period:
+Disp "T = 2π √(mk)
+Disp "Simple pendulum period:
+Disp "T = 2π √(lg)
+Pause 
+ClrHome
+Goto X
+
+
+
+Lbl F2
+Disp "Energy
+Disp "ΣE = K + U
+Disp "
+Disp "Pendulums: 
+Disp "E = (1/2)mv² + mgy
+Disp "Springs (Horizontal):
+Disp "E = (1/2)mv² + (1/2)kx²
+Disp "Springs (Vertical):
+Disp "E = (1/2)mv²+(1/2)kx²+mgy
+Pause 
+ClrHome
+Disp "Mass-spring system
+Disp "E = (1/2)kA²
+Disp "k = 2E/A²
+Disp "T = 2π √(mA²/2E)
+Disp "
+Disp "V[max] = A √(k/m)
+Disp "p[max] = A √(mk)
+Disp "a[max] = A(k/m)
+Disp "T = 2π(Am/p[max])
+Pause 
+ClrHome
+Disp "Simple pendulum
+Disp "V[max] = A √(K/M)
+Disp "a[max] = A (g/l)
+Disp "p[max] = m √(gA²/l)
+Disp "
+Disp "T = 2π √(lm²A²/p²[max])
+Disp "T = 2π √(A/a[max])
+Disp "
+Pause 
+ClrHome
+Goto X
+
+
+
+
+
+Lbl F3
+ZStandard
+GridOff
+AxesOff
+Text(­1,1,1,"X = A cos(2πft)
+Text(25,1,"X is any variable such as displacement
+Text(40,1,"that oscillates at any time t
+Text(60,1,"A stands for Amplitude, indicate max
+Text(75,1,"possible displacement from equilibrium
+Text(95,1,"f stands for Frequency, indicate the
+Text(110,1,"number of cycle in a time period
+Text(130,1,"T stands for time
+Text(150,1,"2πf is equal to angular frequency
+Pause 
+ClrDraw
+Text(­1,0,1,"V = -A(2πf)sin(2πft)
+Text(20,1,"V is  90°  or  π/2  rad out of phase with
+Text(33,1,"displacement since V = dX/dt
+Text(48,1,"When x = max, v = zero
+Text(63,1,"When zero= max, v = max
+Text(­1,95,1,"a = -A(2πf)²cos(2πft)
+Text(115,1,"a is always directed at equilibrium.
+Text(130,1,"a is proportional to displacement
+Text(143,1,"but opposite in sign
+Pause 
+ClrDraw
+Text(0,1,"KE = (1/2)m (4π²f²A²sin²(2πft))
+Text(15,1,"KE is max at equilibrium
+Text(50,1,"PE = (1/2)mA² (4π²f²)cos²(2πft)
+Text(65,1,"PE is zero at equilibrium
+Text(100,1,"E = KE + PE
+Text(115,1,"E = (1/2)(mA²w²)
+Text(130,1,"Angular Frequency (w) = 2πf
+Pause 
+ClrDraw
+Text(0,1,"Momentum P = mv
+Text(15,1,"V = -Aw sin(wt)
+Text(30,1,"P = -mAw sin(wt)
+Text(45,1,"a = -mA(2πf) sin(2πft)
+Text(65,1,"Momentum oscillates just like velocity
+Text(82,1,"Momentum is maximum at equilibrium and
+Text(97,1,"zero at maximum displacement
+Pause 
+ClrDraw
+Goto X
+
+
+
+
+
+Lbl F4
+ClrHome
+Disp "Displacement: cos wave
+Disp "Velocity:     sin wave
+Disp "Acceleration: -cos wave
+Disp "Force:        -cos wave
+Disp "Momentum:     sin wave
+Disp "
+Disp "Kinetic E:    sin² wave
+Disp "Potential E:  cos² wave
+Disp "Mechanical E: Constant
+Pause 
+ClrHome
+Goto X
+
+
+
+
+Lbl G
+ClrHome
+Menu("Fluids","Key Points",G1,"Formulas & Derivations",G2,"Compounded Derivations",G3,"Interpreting Graphs",G4," BACK",θ
+
+Lbl G1
+ClrHome
+Disp "ρ = m/V = Fb/Vg
+Disp "V = lwh
+Disp "
+Disp "Archimedes Principle
+Disp "Fb = ρVg 
+Disp "ρV is equal to the mass of
+Disp "the displaced fluid, times
+Disp "g equals weight of object,
+Disp "which is the buoyant force
+Pause 
+ClrHome
+Disp "Calculate Submerged Object
+Disp "Fb = ρVg 
+Disp "
+Disp "Fb: Object apparent weight
+Disp "V: Displaced fluid volume
+Disp "ρ: Fluid Density
+Disp "
+Disp "Fb= Vg(ρ[object]-ρ[fluid])
+Pause 
+ClrHome
+Disp "Floating objects displace
+Disp "water with volume equal to
+Disp "their apparent weight, and
+Disp "the mass of the displaced 
+Disp "water would be the mass of
+Disp "the full object.
+Disp "Fully submerged objects 
+Disp "displace water equal to 
+Disp "their volume in water
+Pause 
+ClrHome
+Disp "Pressure(P) = Force  Area
+Disp "P = P₀ + ρgh 
+Disp "(unit of Pressure: Pascal)
+Disp "P: Absolute Pressure
+Disp "P₀: Atmospheric Pressure
+Disp "ρgh: Gauge Pressure
+Disp "ρ: Fluid Density (kg/m)
+Disp "h: Fluid Depth   (m)
+Disp "g: g             (N/kg)
+Pause 
+ClrHome
+Disp "[Conservation of Energy]
+Disp "Bernoulli's Equation
+Disp "ρ₁ + ρgy₁ + (1/2)ρv₁ =
+Disp "= ρ₂ + ρgy₂ + (1/2)ρv₂
+Disp "
+Disp "[Conservation of Mass]
+Disp "Fluid Flow Rate
+Disp "Q = Volume  Time
+Disp "unit: m
+Pause 
+ClrHome
+Goto X
+
+Lbl G2
+ClrHome
+Disp "Derivations for Hydraulics
+Disp "P = FA
+Disp "F₁A₁ = P₁ = P₂ = F₂A₂
+Disp "F₂F₁ = A₂A₁
+Disp "
+Disp "Derivation for Pressure
+Disp "Fb = ρVg(L) = Fg = mg(S)
+Disp "ρVg(L) = ρVg(S)
+Disp "V(L)V(S) = ρ(L)ρ(S)
+Pause 
+ClrHome
+Disp "Derivation for Flow Rate
+Disp "Q₁ = Q₂
+Disp "V₁/t₁ = V₂/t₂
+Disp "(A₁d₁)/t₁ = (A₂d₂)/t₂
+Disp "A₁v₁ = A₂v₂
+Disp "v: Fluid velocity
+Disp "A: Cross sectional srea
+Disp "d: Fluid distance flowed
+Disp "V: Volume of flowing fluid
+Pause 
+ClrHome
+Disp "Torricelle's Theorem
+Disp "Condition: P₁ = P₂, y₂ = 0
+Disp "
+Disp "ρgy₁ = (1/2)ρv₂²
+Disp "v₂ = √(2g(y))
+Disp "
+Disp "Range (x) = Vx(t)
+Disp "x = (√(2gh))(√(2h/g))
+Pause 
+ClrHome
+Goto X
+
+
+
+Lbl G3
+ClrHome
+Disp "Time Take to Fill Volume V
+Disp "t = V(Q[in] - Q[out])
+Disp "
+Disp "Object Motion in Fluid
+Disp "v = √((2gh)(|ρ[fluid]-ρ[ob
+Disp "    ject]|)ρ[object])
+Disp "a = ((ρ[object]-ρ[fluid])
+Disp "    ρ[object])*g
+Disp "t = √((2h)a)
+Pause 
+ClrHome
+Goto X
+
+
+
+
+
+Lbl G4
+ClrHome
+Disp "Pressure vs. Height
+Disp "P = P₀ + ρgh
+Disp "
+Disp "Slope: ρg
+Disp "Fluid density (or gravity)
+Disp " 
+Disp "Y-int: P₀ (atm pressure)
+Disp "Where h = 0
+Pause 
+ClrHome
+Disp "Bernoulli's Equation
+Disp "P = [C] - (1/2)ρv² - ρgh
+Disp "
+Disp "Slope: -(1/2)ρ
+Disp "ρ decrease, v increase
+Disp "
+Disp "Y-int: Total mechanical
+Disp "energy per unit volume
+Pause 
+ClrHome
+Disp "Continuity Equation
+Disp "v₂ = (A₁A₂)v₁
+Disp "
+Disp "Slope: A₁A₂
+Disp "if >1, speed increases
+Disp "
+Disp "Y-int: 0
+Pause 
+ClrHome
+Goto X
+
+
+
+
+
+Lbl X
+"Program by Spilopelia-C"
